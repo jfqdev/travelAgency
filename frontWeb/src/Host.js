@@ -1,12 +1,12 @@
 //serverUrl
 
-const enviroment = "local";
+const enviroment = "prod";
 let host;
 
 if (enviroment === "local") {
   host = "localhost:3001";
 } else {
-  host = "vps-1879279-x.dattaweb.com";
+  host = "vps-1831098-x.dattaweb.com";
 }
 
 module.exports = host;
