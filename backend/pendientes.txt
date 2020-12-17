@@ -1,0 +1,11 @@
+--Agregar boton list ( volver atras)
+
+--Orden de los paquetes ( al cliquiear la flechita, manda request al servidor con querys, solucionar desde API)
+
+--Base de datos usar notacion con _
+
+--Field de price cambiarle el formato a BIGINT o algun numero.
+
+--Seguir trabajando rutas
+
+

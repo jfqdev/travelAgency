@@ -1,0 +1,455 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 73px;
+}
+
+.contenedor {
+  margin: 0px 10% 0px 10%;
+}
+
+:target {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
+/*!
+STYLING COMIENZA AQUIII-----------------------------------------------------------------------
+ */
+
+.carousel-item-header {
+  height: 8vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item-highlights {
+  height: 30vh;
+  min-height: 0;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/*-----------Nuestros------------*/
+
+/* Fonts */
+
+@font-face {
+  src: url(fonts/mark_my_words.ttf);
+  font-family: Mark;
+}
+
+@font-face {
+  src: url(fonts/Montserrat-Bold_0.otf);
+  font-family: MontBold;
+}
+
+@font-face {
+  src: url(fonts/Montserrat-ExtraBold_0.otf);
+  font-family: MontExtraBold;
+}
+
+@font-face {
+  src: url(fonts/Montserrat-Light_0.otf);
+  font-family: MontLight;
+}
+
+@font-face {
+  src: url(fonts/Montserrat-Regular.otf);
+  font-family: MontRegular;
+}
+
+@font-face {
+  src: url(fonts/Montserrat-SemiBold_0.otf);
+  font-family: MontSemiBold;
+}
+
+.fontMark {
+  font-family: Mark;
+}
+
+.fontMont-bold {
+  font-family: MontBold;
+}
+
+.fontMont-extra-bold {
+  font-family: MontExtraBold;
+}
+
+.fontMont-light {
+  font-family: MontLight;
+}
+
+.fontMont-regular {
+  font-family: MontRegular;
+}
+
+.fontMont-semi-bold {
+  font-family: MontSemiBold;
+}
+
+/*--BOTON DESTACADOS-----*/
+
+.infoButton {
+  position: absolute;
+  top: 70px;
+  background-color: #04197c;
+  border: 0;
+}
+
+.infoButton:hover {
+  background-color: #0522b4;
+  color: rgb(197, 190, 190);
+}
+
+.subscribeButton {
+  background-color: orangered;
+  border: 0;
+}
+
+/*--BOTON OFERTAS-----*/
+
+.infoButton-oferta {
+  background-color: #04197c;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  color: white;
+}
+
+.infoButton-oferta:hover {
+  background-color: #0522b4;
+  color: rgb(197, 190, 190);
+}
+
+/*Dividers de Los + Solicitados y Nuestras Ofertas*/
+
+.mytextdivider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.mytexttitledivider {
+  flex-grow: 0;
+  padding-right: 3%;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #9f9f9f;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.text-content-subtitulos {
+  color: #04197c;
+}
+
+/*CHAT--------------------*/
+
+.chat-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.chat-btn .close {
+  display: none !important;
+}
+
+.chat-btn i {
+  transition: all 0.9s ease;
+}
+
+#check:checked ~ .chat-btn i {
+  display: block;
+  pointer-events: auto;
+  transform: rotate(180deg);
+}
+
+#check:checked ~ .chat-btn .comment {
+  display: none;
+}
+
+.chat-btn i {
+  font-size: 22px;
+  color: #fff !important;
+}
+
+.chat-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: orangered;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+}
+
+.wrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 0px;
+  width: 300px;
+  background-color: orangered;
+  border-radius: 5px 50px 5px 5px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: -1;
+}
+
+#check:checked ~ .wrapper {
+  opacity: 1;
+  z-index: 1;
+}
+
+.header {
+  padding: 13px;
+  background-color: orangered;
+  border-radius: 5px 50px 0px 0px;
+  color: #fff;
+}
+
+.chat-form {
+  padding: 15px;
+}
+
+.chat-form input,
+textarea,
+button {
+  margin-bottom: 10px;
+}
+
+.chat-form textarea {
+  resize: none;
+}
+
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+#check {
+  display: none !important;
+}
+
+.chat-button {
+  background-color: #04197c;
+  color: white;
+  border: 0;
+}
+
+.chat-button:hover {
+  background-color: #0522b4;
+  color: rgb(197, 190, 190);
+}
+
+/* Footer ---------------*/
+
+.custFooter-p {
+  display: inline;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.custFooter-icon {
+  display: inline-block;
+  color: white;
+  transform: rotate(20deg);
+}
+
+.custSubFooterCol {
+  border-right: 1px solid gray;
+}
+
+.custSsubFooter {
+  color: gray;
+  white-space: nowrap;
+  width: inherit;
+  font-size: small;
+  text-align: center;
+}
+
+.custFooter-div {
+  background-color: #04197c;
+  min-height: 20vh;
+}
+
+.custFooter-border {
+  border-right: 1px solid rgb(228, 228, 228);
+}
+
+.social-media-btn:hover {
+  background-color: white;
+  border-radius: 11px 11px 11px 11px;
+  color: rgb(197, 190, 190);
+}
+
+/* Cards---------------------*/
+
+/* Card-Solicitado-*/
+
+.card-clase-img {
+  border-radius: 0px 50px 30px;
+  margin-right: 10px;
+}
+
+.card-info-position {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  color: white;
+}
+
+/* Card-Oferta-*/
+
+.card-oferta {
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  overflow: hidden;
+}
+
+.card-image {
+  border-top-right-radius: 30px;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-oferta-text-info {
+  font-family: "Open Sans", sans-serif;
+  color: #04197c;
+}
+
+.card-oferta-text-title {
+  color: #04197c;
+}
+
+/*--Institutional----*/
+
+.institutional-icon {
+  color: gray;
+  transform: rotate(20deg);
+}
+
+.institutional-title {
+  color: #04197c;
+  font-weight: bold;
+}
+
+.institutional-body {
+  text-align: revert;
+}
+
+.modal-colors {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(255, 0, 224, 0.24413515406162467) 100%
+  );
+}
+
+.modal-body-img {
+  background-image: url("https://wallpapercrafter.com/desktop/272919-white-sand-with-a-single-green-plant-growing-in-it.jpg");
+}
+
+/*--Navbar----*/
+
+.custom-navbar {
+  background-color: white !important;
+}
+
+.custom-navbar-item-color {
+  color: #04197c;
+  text-shadow: gray;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(88,0,129, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+  border-color: rgb(88, 0, 129);
+}
+
+/*--Footer Custom 2----*/
