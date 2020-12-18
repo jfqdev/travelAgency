@@ -5,7 +5,7 @@ import Iframe from "react-iframe";
 
 export default () => (
   <Card>
-    <CardHeader title="Sportrip" />
+    <CardHeader title="Admin" />
     <CardContent>Bienvenido al Panel de Administración</CardContent>
   </Card>
 );

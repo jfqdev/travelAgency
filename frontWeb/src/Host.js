@@ -1,6 +1,6 @@
 //serverUrl
 
-const enviroment = "prod";
+const enviroment = "local";
 let host;
 
 if (enviroment === "local") {

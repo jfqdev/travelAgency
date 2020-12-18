@@ -38,7 +38,7 @@ var englishMessages = {
     //create: 'Create %{name}',
     page: {
       create: "Nueva Entrada",
-      dashboard: "Sportrip",
+      dashboard: "Welcome",
       edit: "Id #%{id}",
       error: "Ha habido un error",
       list: "%{name}",
