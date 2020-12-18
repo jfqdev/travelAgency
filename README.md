@@ -16,7 +16,7 @@ This page was designed to meet the needs of a travel agency including:
 
 ---
 
-It also includes an administrator website that requires proper authentication to get access to it.
+It also includes an administrator website that requires to log in. Authentication and authorization after login are handle using JWT.     
 This section is in charge of :
 - Content Management
 - Receiving and handling forms and subscriptions
